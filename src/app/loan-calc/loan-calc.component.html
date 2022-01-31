@@ -1,0 +1,55 @@
+<section>
+  <div class="container">
+    <div class="card">
+      <form action="form">
+        <div style="margin: 0 auto;width: 600px;">
+          <div class="mb-3 mt-3 row">
+            <label class="col-2 col-form-label">Price :</label>
+            <div class="col-10">
+              <input type="text" placeholder="price" class="form-control" id="" #pAmount>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-2 col-form-label">Type of Loan :</label>
+            <div class="col-10">
+              <select name="" id="select" (change)="typeLoan(loanType.value)" #loanType>
+                <option value="8">Car loan</option>
+                <option value="7">Home loan</option>
+                <option value="10">Personal loan</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-2 col-form-label">ROT :</label>
+            <div class="col-10">
+              <input type="text" placeholder="rate of intrest" class="form-control" id="" value="{{typeofLoan}}" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-2 col-form-label">Time :</label>
+            <div class="col-10">
+              <input type="text" placeholder="Time in months" class="form-control" id="" #time>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <input type="text" class="form-control w-sp" placeholder="Total" value="{{totalValue}}" name="" id="screen" #total>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control w-sp" placeholder="EMI" value="{{emi}}" name="" id="screen">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <input type="button" class="btns btn btn-success" value="Calculate" (click)="calculate(pAmount.value,loanType.value,time.value)">
+            </div>
+            <div class="col-6">
+              <input type="reset" class="btns btn btn-danger">
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

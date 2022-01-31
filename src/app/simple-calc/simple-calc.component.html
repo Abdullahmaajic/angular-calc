@@ -1,0 +1,28 @@
+<div class="container  mt-5 card shadow calculator">
+  <h1 class="text-center text-light">Calculator</h1>
+  <div class="row mt-3">
+    <input type="text" class="form-control w-sp" placeholder="0" name="" id="screen">
+  </div>
+  <div class="row calc">
+    <input type="button" id="clear" class="col-2 btn-align" value="C" style="color: red;" (click)="clearAll()">
+    <input type="button" class="col-2 btn-align" value="X" style="color: red;" (click)="deleteOne()">
+    <input type="button" class="col-2 btn-align" value="%" style="color: green;" (click)="display('%')">
+    <input type="button" class="col-2 btn-align" value="/" style="color: green;" (click)="display('/')">
+    <input type="button" class="col-2 btn-align" value="7" (click)="display('7')">
+    <input type="button" class="col-2 btn-align" value="8" (click)="display('8')">
+    <input type="button" class="col-2 btn-align" value="9" (click)="display('9')">
+    <input type="button" class="col-2 btn-align" value="*" style="color: green;" (click)="display('*')">
+    <input type="button" class="col-2 btn-align" value="4" (click)="display('4')">
+    <input type="button" class="col-2 btn-align" value="5" (click)="display('5')">
+    <input type="button" class="col-2 btn-align" value="6" (click)="display('6')">
+    <input type="button" class="col-2 btn-align" value="-" style="color: green;" (click)="display('-')">
+    <input type="button" class="col-2 btn-align" value="1" (click)="display('1')">
+    <input type="button" class="col-2 btn-align" value="2" (click)="display('2')">
+    <input type="button" class="col-2 btn-align" value="3" (click)="display('3')">
+    <input type="button" class="col-2 btn-align" value="+" style="color: green;" (click)="display('+')">
+    <input type="button" class="col-2 btn-align" value="+/-" (click)="display('+/-')">
+    <input type="button" class="col-2 btn-align" value="0" (click)="display('0')">
+    <input type="button" class="col-2 btn-align" value="." (click)="display('.')">
+    <input type="button" class="col-2 btn-align" value="=" style="color: red;" (click)="equal()">
+  </div>
+</div>
